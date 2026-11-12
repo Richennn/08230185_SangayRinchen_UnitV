@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "students": [
+    {
+      "student_id": "02230001",
+      "name": "Tashi Dorji",
+      "gender": "Male",
+      "programme": "BSc IT",
+      "year": 1,
+      "email": "tashi.dorji@example.edu.bt",
+      "dob": "2002-01-10",
+      "active": true,
+      "marks": {
+        "Programming": 65,
+        "Mathematics": 54,
+        "Databases": 70,
+        "English": 86
+      }
+    },
+    {
+      "student_id": "02230002",
+      "name": "Pema Choden",
+      "gender": "Female",
+      "programme": "BSc CS",
+      "year": 2,
+      "email": "pema.choden@example.edu.bt",
+      "dob": "2003-02-11",
+      "active": true,
+      "marks": {
+        "Programming": 48,
+        "Mathematics": 49,
+        "Databases": 79,
+        "English": 51
+      }
+    },
+    {
+      "student_id": "02230003",
+      "name": "Sonam Wangchuk",
+      "gender": "Male",
+      "programme": "BE Software Eng.",
+      "year": 3,
+      "email": "sonam.wangchuk@example.edu.bt",
+      "dob": "2004-03-12",
+      "active": true,
+      "marks": {
+        "Programming": 68,
+        "Mathematics": 82,
+        "Databases": 48,
+        "English": 77
+      }
+    },
+    {
+      "student_id": "02230004",
+      "name": "Dechen Yangzom",
+      "gender": "Female",
+      "programme": "BBA",
+      "year": 4,
+      "email": "dechen.yangzom@example.edu.bt",
+      "dob": "2005-04-13",
+      "active": true,
+      "marks": {
+        "Programming": 58,
+        "Mathematics": 47,
+        "Databases": 50,
+        "English": 72
+      }
+    },
+    {
+      "student_id": "02230005",
+      "name": "Karma Tenzin",
+      "gender": "Male",
+      "programme": "BA English",
+      "year": 1,
+      "email": "karma.tenzin@example.edu.bt",
+      "dob": "2006-05-14",
+      "active": true,
+      "marks": {
+        "Programming": 85,
+        "Mathematics": 35,
+        "Databases": 62,
+        "English": 43
+      }
+    },
+    {
+      "student_id": "02230006",
+      "name": "Kinley Wangmo",
+      "gender": "Female",
+      "programme": "BSc IT",
+      "year": 2,
+      "email": "kinley.wangmo@example.edu.bt",
+      "dob": "2002-06-15",
+      "active": true,
+      "marks": {
+        "Programming": 80,
+        "Mathematics": 72,
+        "Databases": 48,
+        "English": 81
+      }
+    },
+    {
+      "student_id": "02230007",
+      "name": "Ugyen Phuntsho",
+      "gender": "Male",
+      "programme": "BSc CS",
+      "year": 3,
+      "email": "ugyen.phuntsho@example.edu.bt",
+      "dob": "2003-07-16",
+      "active": true,
+      "marks": {
+        "Programming": 52,
+        "Mathematics": 59,
+        "Databases": 85,
+        "English": 85
+      }
+    },
+    {
+      "student_id": "02230008",
+      "name": "Chimi Lhamo",
+      "gender": "Female",
+      "programme": "BE Software Eng.",
+      "year": 4,
+      "email": "chimi.lhamo@example.edu.bt",
+      "dob": "2004-08-17",
+      "active": true,
+      "marks": {
+        "Programming": 82,
+        "Mathematics": 48,
+        "Databases": 81,
+        "English": 82
+      }
+    },
+    {
+      "student_id": "02230009",
+      "name": "Jigme Namgyel",
+      "gender": "Male",
+      "programme": "BBA",
+      "year": 1,
+      "email": "jigme.namgyel@example.edu.bt",
+      "dob": "2005-09-18",
+      "active": true,
+      "marks": {
+        "Programming": 70,
+        "Mathematics": 48,
+        "Databases": 59,
+        "English": 47
+      }
+    },
+    {
+      "student_id": "02230010",
+      "name": "Tshering Yangden",
+      "gender": "Female",
+      "programme": "BA English",
+      "year": 2,
+      "email": "tshering.yangden@example.edu.bt",
+      "dob": "2006-10-19",
+      "active": false,
+      "marks": {
+        "Programming": 80,
+        "Mathematics": 53,
+        "Databases": 63,
+        "English": 71
+      }
+    },
+    {
+      "student_id": "02230011",
+      "name": "Ngawang Gyeltshen",
+      "gender": "Male",
+      "programme": "BSc IT",
+      "year": 3,
+      "email": "ngawang.gyeltshen@example.edu.bt",
+      "dob": "2002-11-20",
+      "active": true,
+      "marks": {
+        "Programming": 50,
+        "Mathematics": 47,
+        "Databases": 71,
+        "English": 38
+      }
+    },
+    {
+      "student_id": "02230012",
+      "name": "Sangay Pelden",
+      "gender": "Other",
+      "programme": "BSc CS",
+      "year": 4,
+      "email": "sangay.pelden@example.edu.bt",
+      "dob": "2003-12-21",
+      "active": true,
+      "marks": {
+        "Programming": 51,
+        "Mathematics": 82,
+        "Databases": 81,
+        "English": 85
+      }
+    }
+  ]
+}

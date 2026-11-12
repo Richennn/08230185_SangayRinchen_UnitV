@@ -1,0 +1,6 @@
+# Main app (Part B)
+PyQt6==6.12.0
+# Part A hello-world only
+kivy==2.3.2
+# Optional: building the stand-alone executable (stretch goal)
+pyinstaller==6.22.3

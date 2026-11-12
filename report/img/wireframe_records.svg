@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" font-family="Comic Sans MS, Segoe Print, sans-serif" font-size="12" fill="none" stroke="#333" stroke-width="1.5">
+<rect x="5" y="5" width="710" height="430" rx="4"/><text x="14" y="22" fill="#333" stroke="none">Student Record Manager - Name (Roll)</text>
+<line x1="5" y1="30" x2="715" y2="30"/><text x="14" y="46" fill="#333" stroke="none">File  Records  Help          [menu bar - QMenuBar]</text>
+<line x1="5" y1="54" x2="715" y2="54"/><text x="14" y="72" fill="#333" stroke="none">[Records] [Summary]   (QTabWidget)</text>
+<rect x="15" y="82" width="230" height="200" stroke-dasharray="4 3"/><text x="22" y="98" fill="#333" stroke="none" font-size="11">Details (QGroupBox + QGridLayout)</text>
+<g fill="#333" stroke="none"><text x="22" y="120">ID</text><text x="22" y="142">Name</text><text x="22" y="164">Gender  (o)M ( )F ( )O</text><text x="22" y="186">Programme  [v]</text><text x="22" y="208">Year [1^]</text><text x="22" y="230">Email</text><text x="22" y="252">DOB [date v]</text><text x="22" y="274">[x] Currently enrolled</text></g>
+<rect x="90" y="110" width="145" height="14"/><rect x="90" y="132" width="145" height="14"/><rect x="90" y="220" width="145" height="14"/>
+<rect x="15" y="290" width="230" height="90" stroke-dasharray="4 3"/><text x="22" y="306" fill="#333" stroke="none">Marks (QFormLayout) 4 x QSpinBox</text>
+<text x="22" y="398" fill="#b3261e" stroke="none">- error label (red)</text>
+<rect x="15" y="406" width="52" height="20"/><rect x="74" y="406" width="52" height="20"/><rect x="133" y="406" width="52" height="20"/><rect x="192" y="406" width="52" height="20"/>
+<g fill="#333" stroke="none"><text x="26" y="420">Add</text><text x="80" y="420">Update</text><text x="139" y="420">Delete</text><text x="200" y="420">Clear</text></g>
+<line x1="255" y1="82" x2="255" y2="426" stroke-dasharray="2 4"/><text x="255" y="78" text-anchor="middle" fill="#333" stroke="none" font-size="10">QSplitter</text>
+<rect x="270" y="82" width="250" height="20"/><text x="276" y="96" fill="#333" stroke="none">search...</text>
+<rect x="528" y="82" width="70" height="20"/><text x="534" y="96" fill="#333" stroke="none">All  v</text>
+<line x1="610" y1="92" x2="705" y2="92"/><circle cx="625" cy="92" r="6"/><text x="610" y="78" fill="#333" stroke="none" font-size="10">min avg slider</text>
+<rect x="270" y="110" width="435" height="290"/><line x1="270" y1="130" x2="705" y2="130"/>
+<text x="276" y="124" fill="#333" stroke="none">ID | Name | Programme | Year | Avg | Grade | Active</text>
+<g stroke="#999"><line x1="270" y1="150" x2="705" y2="150"/><line x1="270" y1="170" x2="705" y2="170"/><line x1="270" y1="190" x2="705" y2="190"/><line x1="270" y1="210" x2="705" y2="210"/></g>
+<text x="276" y="300" fill="#333" stroke="none">QTableWidget - click row = load into form</text>
+<text x="276" y="420" fill="#333" stroke="none">Showing n of m students</text>
+</svg>

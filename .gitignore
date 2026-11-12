@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+build/
+dist/
+*.spec
+data/*.tmp
+data/*.corrupt.json
+screenshots_for_report.zip

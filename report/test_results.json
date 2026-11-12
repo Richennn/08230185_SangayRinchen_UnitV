@@ -1,0 +1,122 @@
+[
+  {
+    "#": 1,
+    "action": "Add a new student",
+    "input": "02230099, Dawa Lhamo, valid email, marks 78/66/81/72",
+    "expected": "Row added; status bar confirms; count +1",
+    "actual": "Added; 13 records; status: 'Added Dawa Lhamo (02230099)'",
+    "result": "Pass"
+  },
+  {
+    "#": 2,
+    "action": "Close and reopen data file",
+    "input": "-",
+    "expected": "Dawa Lhamo still present after reload",
+    "actual": "Found after reload",
+    "result": "Pass"
+  },
+  {
+    "#": 3,
+    "action": "Add with invalid Student ID",
+    "input": "ID '12ab'",
+    "expected": "Error dialog; ID field highlighted red; nothing saved",
+    "actual": "Dialog 'Please check the form': Student ID must be exactly 8 digits, e.g. 02230045.",
+    "result": "Pass"
+  },
+  {
+    "#": 4,
+    "action": "Add with empty name",
+    "input": "Name ''",
+    "expected": "Error 'Name must be 2-60 letters'",
+    "actual": "Name must be 2-60 letters (spaces, . ' - allowed).",
+    "result": "Pass"
+  },
+  {
+    "#": 5,
+    "action": "Add with invalid email",
+    "input": "Email 'dawa@'",
+    "expected": "Error 'Email is not valid'",
+    "actual": "Email is not valid, e.g. name@rub.edu.bt.",
+    "result": "Pass"
+  },
+  {
+    "#": 6,
+    "action": "Add with an ID that already exists",
+    "input": "ID 02230001",
+    "expected": "Error 'already exists'; original record unchanged",
+    "actual": "Student ID 02230001 already exists.",
+    "result": "Pass"
+  },
+  {
+    "#": 7,
+    "action": "Add with date of birth giving age < 15",
+    "input": "DOB 2024-01-01",
+    "expected": "Error about age range",
+    "actual": "Date of birth gives an age outside 15-80 years.",
+    "result": "Pass"
+  },
+  {
+    "#": 8,
+    "action": "Type 150 into a mark spin box",
+    "input": "English = 150",
+    "expected": "Value clamped to 100 by QSpinBox",
+    "actual": "Spin box value = 100",
+    "result": "Pass"
+  },
+  {
+    "#": 9,
+    "action": "Click first table row",
+    "input": "Row 0",
+    "expected": "Form shows that student; Update/Delete enabled",
+    "actual": "Form ID=02230001, Update enabled=True",
+    "result": "Pass"
+  },
+  {
+    "#": 10,
+    "action": "Edit a mark and click Update",
+    "input": "02230001: Programming -> 99",
+    "expected": "Saved; table average updated",
+    "actual": "Programming = 99, avg 77.2",
+    "result": "Pass"
+  },
+  {
+    "#": 11,
+    "action": "Delete, then answer No",
+    "input": "02230001",
+    "expected": "Confirmation shown; record kept",
+    "actual": "Asked 'Delete Tashi Dorji (02230001)?'; record kept=True",
+    "result": "Pass"
+  },
+  {
+    "#": 12,
+    "action": "Delete, then answer Yes",
+    "input": "02230001",
+    "expected": "Record removed; count -1",
+    "actual": "Removed=True; 12 records",
+    "result": "Pass"
+  },
+  {
+    "#": 13,
+    "action": "Type in search box",
+    "input": "'pema'",
+    "expected": "Only matching names listed",
+    "actual": "1 row(s): Pema Choden",
+    "result": "Pass"
+  },
+  {
+    "#": 14,
+    "action": "Drag min-average slider",
+    "input": "70",
+    "expected": "Only students with average >= 70 shown",
+    "actual": "5 row(s), lowest avg 70.2",
+    "result": "Pass"
+  },
+  {
+    "#": 15,
+    "action": "Start with a corrupt data file",
+    "input": "'{ broken'",
+    "expected": "Warning shown, backup kept, app starts empty (no crash)",
+    "actual": "The data file was damaged (JSONDecodeError). A copy was kept as bad.corrupt.json; starting with an empty list.",
+    "result": "Pass"
+  }
+]

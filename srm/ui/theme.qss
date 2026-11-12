@@ -1,0 +1,66 @@
+/* Student Record Manager theme - values come from the design-system tokens.
+   surface-100 #f7f5f0  surface-raised #ffffff  surface-alt #eef0ec
+   ink #1f2a30  ink-muted #56626b  border #cfc9bd  border-strong #8a8478
+   primary #1f5f6b  primary-hover #174a54  header #16323a  accent #e0a82e
+   success #2e7d4f  danger #b3261e  danger-tint #fbe9e7                      */
+
+* { font-family: "Inter", "Segoe UI", "Noto Sans", sans-serif; font-size: 13px; color: #1f2a30; }
+
+QMainWindow, QDialog, QTabWidget::pane, QWidget#page { background: #f7f5f0; }
+
+QMenuBar { background: #16323a; padding: 2px; }
+QMenuBar::item { color: #ffffff; padding: 6px 12px; background: transparent; }
+QMenuBar::item:selected { background: #1f5f6b; border-radius: 4px; }
+QMenu { background: #ffffff; border: 1px solid #cfc9bd; }
+QMenu::item { padding: 6px 24px; }
+QMenu::item:selected { background: #1f5f6b; color: #ffffff; }
+
+QLabel#title { font-size: 20px; font-weight: 700; }
+QLabel#muted, QStatusBar QLabel { color: #56626b; }
+QLabel#error { color: #b3261e; font-weight: 600; }
+QLabel#statValue { font-size: 28px; font-weight: 700; color: #1f5f6b; }
+QLabel#statCaption { color: #56626b; font-size: 11px; }
+QFrame#statCard { background: #ffffff; border: 1px solid #cfc9bd; border-radius: 10px; }
+
+QGroupBox { background: #ffffff; border: 1px solid #cfc9bd; border-radius: 6px;
+            margin-top: 18px; padding: 12px; font-weight: 600; font-size: 15px; }
+QGroupBox::title { subcontrol-origin: margin; left: 12px; padding: 0 4px; color: #1f5f6b; }
+
+QLineEdit, QComboBox, QSpinBox, QDateEdit {
+    background: #ffffff; border: 1px solid #8a8478; border-radius: 4px; padding: 4px 6px; min-height: 20px; }
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDateEdit:focus { border: 2px solid #1f5f6b; }
+*[invalid="true"] { border: 2px solid #b3261e; background: #fbe9e7; }
+
+QPushButton { background: #ffffff; border: 1px solid #8a8478; border-radius: 6px; padding: 6px 12px; font-weight: 600; }
+QPushButton:hover { background: #eef0ec; }
+QPushButton#primary { background: #1f5f6b; color: #ffffff; border: none; }
+QPushButton#primary:hover, QPushButton#primary:pressed { background: #174a54; }
+QPushButton#danger { background: #ffffff; color: #b3261e; border: 1px solid #b3261e; }
+QPushButton#danger:hover { background: #fbe9e7; }
+QPushButton:disabled, QPushButton#danger:disabled, QPushButton#primary:disabled {
+    color: #8a8478; border: 1px solid #cfc9bd; background: #f7f5f0; }
+
+QTableWidget { background: #ffffff; alternate-background-color: #eef0ec; border: 1px solid #cfc9bd;
+               gridline-color: #cfc9bd; selection-background-color: #1f5f6b; selection-color: #ffffff; }
+QHeaderView::section { background: #eef0ec; border: none; border-bottom: 1px solid #cfc9bd;
+                       padding: 6px; font-weight: 600; }
+
+QTabBar::tab { background: transparent; padding: 8px 16px; color: #56626b; border-bottom: 3px solid transparent; }
+QTabBar::tab:selected { color: #1f2a30; border-bottom: 3px solid #1f5f6b; font-weight: 600; }
+
+QProgressBar { background: #eef0ec; border: 1px solid #cfc9bd; border-radius: 4px; text-align: center; min-height: 18px; }
+QProgressBar::chunk { background: #e0a82e; border-radius: 3px; }
+
+QSlider::groove:horizontal { height: 6px; background: #cfc9bd; border-radius: 3px; }
+QSlider::sub-page:horizontal { background: #1f5f6b; border-radius: 3px; }
+QSlider::handle:horizontal { background: #e0a82e; border: 1px solid #8a8478; width: 16px; margin: -6px 0; border-radius: 8px; }
+
+QStatusBar { background: #eef0ec; border-top: 1px solid #cfc9bd; }
+
+/* Drop-down and spin arrows: {UI_DIR} is replaced with this folder's path at load time (see srm/ui/theme.py) */
+QComboBox::drop-down, QDateEdit::drop-down { border: none; width: 22px; }
+QComboBox::down-arrow, QDateEdit::down-arrow { image: url({UI_DIR}/arrow-down.svg); width: 10px; height: 6px; }
+QSpinBox::up-button, QSpinBox::down-button { border: none; width: 20px; background: transparent; }
+QSpinBox::up-button:hover, QSpinBox::down-button:hover { background: #eef0ec; }
+QSpinBox::up-arrow { image: url({UI_DIR}/arrow-up.svg); width: 10px; height: 6px; }
+QSpinBox::down-arrow { image: url({UI_DIR}/arrow-down.svg); width: 10px; height: 6px; }
